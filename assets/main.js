@@ -14,13 +14,19 @@ let sentence = document.querySelector('#sentence')
 let searchResults = document.querySelector('#search-results')
 
 searchButton.addEventListener('click', function () {
+
  if (sentence.innerText.includes(textbox.value)){
    searchResults.innerText = 'Match was found'
+   console.log ('Match was found')
 }
+
 else {
   searchResults.innerText = 'No Results, Too Bad'
+  console.log ('No Results, Too Bad')
+  textbox.value.trim()
 
 }
+
 })
   
 
