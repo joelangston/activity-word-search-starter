@@ -8,14 +8,16 @@
   font-family: 'Montserrat', sans-serif;
   --default-border: 2px dotted grey;
   --default-margin: 50px;
+  
 }
-
+body {background-color: black;}
 main {
   display: flex;
   margin: var(--default-margin) auto;
   width: 50%;
   flex-direction: column;
   align-items: center;
+  background-color: aqua;
 }
 
 .quote-source {
@@ -38,4 +40,5 @@ fieldset {
   font-size: 1em;
   margin: var(--default-margin) 0px;
   border: var(--default-border);
+  background-color: white;
 }
