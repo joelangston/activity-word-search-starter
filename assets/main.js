@@ -15,7 +15,7 @@ let searchResults = document.querySelector('#search-results')
 
 searchButton.addEventListener('click', function () {
 
- if (sentence.innerText.includes(textbox.value)){
+ if (sentence.innerText.includes(textbox.value.toLowerCase().trim())){
    searchResults.innerText = 'Match was found'
    console.log ('Match was found')
 }
@@ -23,7 +23,7 @@ searchButton.addEventListener('click', function () {
 else {
   searchResults.innerText = 'No Results, Too Bad'
   console.log ('No Results, Too Bad')
-  textbox.value.trim()
+  
 
 }
 
